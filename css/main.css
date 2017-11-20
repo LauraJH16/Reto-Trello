@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #0079bf;
+}
+
+header {
+    background-color: #0067a3;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    position: relative;
+    box-shadow: 1px 1px 10px #016faa;
+}
+
+header ul li {
+    float: left;
+    list-style: none;
+}
+
+.icon i {
+    color: #fff;
+    padding: 10px 10px;
+}
+
+.logo>img {
+    height: 60px;
+    margin-left: 25%;
+    margin-top: -10px;
+    position: absolute;
+}
+
+.tableros {
+    background-color: rgba(255, 255, 255, .3);
+    width: 100px;
+    margin-left: 10px;
+    border-radius: 3px;
+    margin-top: 5px;
+    height: 30px;
+}
+
+.tableros p {
+    display: inline-block;
+    padding: 7px 4px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.tableros i {
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.search {
+    background-color: rgba(255, 255, 255, .3);
+    width: 181px;
+    margin-left: 10px;
+    border-radius: 3px;
+    margin-top: 5px;
+    height: 30px;
+}
+
+.search i {
+    padding: 6px 5px;
+}
+
+.search input {
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.01);
+    outline: none;
+    width: 140px;
+    height: 28px;
+    padding-left: 10px;
+}
+
+.icon {
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 3px;
+    display: inline-block;
+    margin: 4px;
+    width: 31px;
+    height: 31px;
+}
+
+.icon i {
+    margin-top: -3px;
+    text-align: center;
+}
+
+.perfil img {
+    height: 32px;
+    border-radius: 100px;
+    top: 8px;
+}
+
+.perfil {
+    padding-top: 3px;
+    margin-left: 8px;
+}
+
+.content-icons {
+    position: absolute;
+    right: 8px;
+    height: 40px;
+    top: 0px;
+}
+
+.container-header {
+    height: 60px;
+}
+
+.title-tablero p,
+.title-tablero i {
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.title-tablero p:first-child {
+    font-size: 18px;
+}
+
+.title-tablero p:last-child {
+    float: right;
+    text-decoration: underline;
+    margin-right: 20px;
+}
+
+#contenedor {
+    color: #000;
+}
+
+
+/*.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}*/
+
+.form {
+    display: block;
+    background: #fff;
+    width: 220px;
+    height: 60px;
+}
+
+.list {
+    width: 270px;
+    background-color: #e2e4e6;
+    border-radius: 3px;
+    margin: 10px;
+    margin-right: 0px;
+    float: left;
+}
+
+.form {
+    height: 80px;
+    width: 270px;
+    background-color: #e2e4e6;
+    border-radius: 3px;
+    margin: 10px;
+    float: left;
+}
+
+.nameList {
+    width: 260px;
+    height: 34px;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    margin: 5px;
+    background-color: #d6d8da;
+    padding: 7px;
+    box-shadow: inset 0 1px 8px rgba(0, 0, 0, .15);
+    outline: none;
+}
+
+.save {
+    width: 82px;
+    height: 32px;
+    background-color: #5aac44;
+    margin: 0 5px 5px 5px;
+    border-radius: 3px;
+    border-style: none;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+.save:hover {
+    background: #4d9439;
+}
+
+#divList {
+    width: 270px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 3px;
+    background-color: #006aa7;
+    color: #9dc7df;
+    padding: 10px;
+    font-size: 14px;
+    float: left;
+}
+
+#divList:hover {
+    background-color: rgba(25, 27, 25, 0.5);
+    cursor: pointer;
+}
+
+.titleList {
+    font-weight: 700;
+    font-size: 14px;
+    margin: 9px;
+}
+
+.divHomeWork {
+    padding: 10px;
+    font-size: 14px;
+    color: #90989d;
+}
+
+.divHomeWork:hover {
+    background-color: #cdd2d4;
+    width: inherit;
+    text-decoration: underline #4d4d4d;
+    color: #6a6b6b;
+    cursor: pointer;
+}
+
+.nameHomeWork {
+    width: 256px;
+    height: 66px;
+    resize: none;
+    border-radius: 3px;
+    margin-top: 0px;
+    margin: 7px;
+    margin-bottom: 2px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    outline: none;
+    overflow: hidden;
+}
+
+.formHomeWork {
+    width: 250px;
+}
+
+.saveHomeWork {
+    width: 76px;
+    height: 33px;
+    background-color: #5aac44;
+    margin: 0 3px 7px 7px;
+    border-radius: 3px;
+    border-style: none;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+.saveHomeWork:hover {
+    background: #4d9439;
+}
+
+.homeWork {
+    background-color: white;
+    width: 256px;
+    height: 33px;
+    word-wrap: break-word;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 7px;
+    margin-bottom: 1px;
+    padding-top: 7px;
+    padding-left: 7px;
+    font-size: 14px;
+    color: #4d4d4d;
+    box-sizing: border-box;
+}
+
+.homeWork:hover {
+    background-color: #d8dadb;
+}

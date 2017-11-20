@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trello</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header>
+    <div class='container-header'>
+      <ul>
+        <li class='tableros'>
+          <i class="fa fa-trello" aria-hidden="true"></i>
+          <p>Tableros</p>
+        </li>
+        <li class="search">
+          <input type="text">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </li>
+        <li class='logo'>
+          <img src="assets/images/trello-logo.png" alt="logo-trello">
+        </li>
+        <li>
+          <ul class='content-icons'>
+            <li class='icon'>
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </li>
+            <li class='icon'>
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+            </li>
+            <li class='icon'>
+              <i class="fa fa-bell-o" aria-hidden="true"></i>
+            </li>
+            <li class='perfil'>
+              <img src="assets/images/photo.jpg" alt="photo-perfil">
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <ul class="title-tablero">
+      <p>Tablero - Reto de Código</p>
+      <i class="fa fa-star-o" aria-hidden="true"></i>
+      <i class="fa fa-lock" aria-hidden="true"></i>
+      <p>Privado</p>
+      <p>Mostrar Menú</p>
+    </ul>
+    <div id="contenedor">
+      <div id="container-list"></div>
+      <div id="container-addlist">
+        <div id="divList">Añadir una lista...</div>
+        <!---<form id="form" class="hide">
+                <input id="titleList" placeholder="Añadir una lista...">
+                <button id="addList">Guardar</button>
+            </form>-->
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
