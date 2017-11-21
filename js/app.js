@@ -15,9 +15,18 @@ window.addEventListener('load', function() {
     nameList.setAttribute('placeholder', 'Añadir una lista...');
     nameList.classList.add('nameList');
     var save = document.createElement('button');
+    var closeSave = document.createElement('i');
+    closeSave.addEventListener('click', closeList);
+    function closeList(event) {
+      containerAddList.removeChild(formAddList);
+      containerAddList.appendChild(divList);
+    }
+    closeSave.setAttribute('class', 'fa fa-times');
+    closeSave.setAttribute('aria-hidden', 'true');
     save.classList.add('save');
     formAddList.appendChild(nameList);
     formAddList.appendChild(save);
+    formAddList.appendChild(closeSave);
     save.textContent = 'Guardar';
     containerAddList.removeChild(divList);
     nameList.focus();
@@ -43,10 +52,19 @@ window.addEventListener('load', function() {
         var nameHomeWork = document.createElement('textarea');
         nameHomeWork.classList.add('nameHomeWork');           
         var saveHomeWork = document.createElement('button');
+        var closeAdd = document.createElement('i');
+        closeAdd.addEventListener('click', closeHomeWork);
+        function closeHomeWork(event) {
+          list.removeChild(formHomeWork);
+          list.appendChild(divHomeWork);
+        }
+        closeAdd.setAttribute('class', 'fa fa-times');
+        closeAdd.setAttribute('aria-hidden', 'true');
         saveHomeWork.classList.add('saveHomeWork');
         saveHomeWork.textContent = 'Añadir';
         formHomeWork.appendChild(nameHomeWork);
         formHomeWork.appendChild(saveHomeWork);
+        formHomeWork.appendChild(closeAdd);
         list.appendChild(formHomeWork);
         list.removeChild(divHomeWork);
         nameHomeWork.focus();
